@@ -119,7 +119,7 @@ export default function App() {
           />
           <button
             className="btn btn-primary btn-lg mt-4 d-block mx-auto w-50"
-            onClick={handleReset}
+            onClick={() => setOutputImage(null)}
           >
             Try Again
           </button>
