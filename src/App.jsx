@@ -144,7 +144,7 @@ export default function App() {
                 className="form-control bg-dark text-light"
                 onChange={(e) => handleFileChange(e, "image_base64")}
               />
-              {form.selfie && (
+              {form.image_base64 && (
                 <div className="mt-2 text-center">
                   <img
                     src={URL.createObjectURL(form.image_base64)}
@@ -167,7 +167,7 @@ export default function App() {
                 className="form-control bg-dark text-light"
                 onChange={(e) => handleFileChange(e, "background_b64")}
               />
-              {form.background && (
+              {form.background_b64 && (
                 <div className="mt-2 text-center">
                   <img
                     src={URL.createObjectURL(form.background_b64)}
