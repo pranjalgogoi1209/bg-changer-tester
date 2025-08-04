@@ -147,7 +147,7 @@ export default function App() {
               {form.selfie && (
                 <div className="mt-2 text-center">
                   <img
-                    src={URL.createObjectURL(form.selfie)}
+                    src={URL.createObjectURL(form.image_base64)}
                     alt="User Selfie"
                     className="rounded img-fluid"
                     style={{ maxHeight: "120px", width: "auto" }}
@@ -170,7 +170,7 @@ export default function App() {
               {form.background && (
                 <div className="mt-2 text-center">
                   <img
-                    src={URL.createObjectURL(form.background)}
+                    src={URL.createObjectURL(form.background_b64)}
                     alt="Background"
                     className="rounded img-fluid"
                     style={{ maxHeight: "120px", width: "auto" }}
