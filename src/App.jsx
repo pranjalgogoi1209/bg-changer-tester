@@ -14,6 +14,7 @@ export default function App() {
     user_scale: 0.5,
     horizontal_shift: 0,
     color_balance: 0.3,
+    feather_px: 3.0,
   };
 
   const [form, setForm] = useState(initialForm);
@@ -77,7 +78,6 @@ export default function App() {
       output_format: "png",
       prompt_upsampling: false,
       safety_tolerance: 2,
-      feather_px: 3,
     };
 
     console.log(submitData);
@@ -264,6 +264,19 @@ export default function App() {
                 step={0.01}
                 className="form-control bg-dark text-light"
                 value={form.color_balance}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div className="col-12 col-md-6">
+              <label className="form-label">Feather Px (1-10)</label>
+              <input
+                type="number"
+                name="feather_px"
+                /* min={1}
+                max={10} */
+                step={1}
+                className="form-control bg-dark text-light"
+                value={form.feather_px}
                 onChange={handleInputChange}
               />
             </div>
