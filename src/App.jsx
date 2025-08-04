@@ -194,8 +194,8 @@ export default function App() {
               <input
                 type="number"
                 name="idol_safe_zone_top"
-                min={0.3}
-                max={0.7}
+                /* min={0.3}
+                max={0.7} */
                 step={0.01}
                 className="form-control bg-dark text-light"
                 value={form.idol_safe_zone_top}
@@ -207,8 +207,8 @@ export default function App() {
               <input
                 type="number"
                 name="min_group_scale"
-                min={0.4}
-                max={1}
+                /* min={0.4}
+                max={1} */
                 step={0.01}
                 className="form-control bg-dark text-light"
                 value={form.min_group_scale}
@@ -220,8 +220,8 @@ export default function App() {
               <input
                 type="number"
                 name="max_group_scale"
-                min={0.7}
-                max={1}
+                /*  min={0.7}
+                max={1} */
                 step={0.01}
                 className="form-control bg-dark text-light"
                 value={form.max_group_scale}
@@ -233,8 +233,8 @@ export default function App() {
               <input
                 type="number"
                 name="user_scale"
-                min={0.5}
-                max={1}
+                /*   min={0.5}
+                max={1} */
                 step={0.01}
                 className="form-control bg-dark text-light"
                 value={form.user_scale}
@@ -259,8 +259,8 @@ export default function App() {
               <input
                 type="number"
                 name="color_balance"
-                min={0.3}
-                max={1}
+                /*  min={0.3}
+                max={1} */
                 step={0.01}
                 className="form-control bg-dark text-light"
                 value={form.color_balance}
